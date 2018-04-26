@@ -1,0 +1,10 @@
+Options +SymLinksIfOwnerMatch
+RewriteEngine On
+# RewriteBase /
+RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule . https://www.xxxxx.com/404.html [L]
+ErrorDocument 404 https://www.xxxxx.com/404.html
