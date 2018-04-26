@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<title>TrendTalk (DEMO)</title>
+		<meta name="description" content="TrendTalk (DEMO)">
+    <meta name="keywords" content="TrendTalk (DEMO)">
+		<link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico"/>
+		<meta property="og:title" content="TrendTalk (DEMO)"/>
+		<meta property="og:description" content="TrendTalk (DEMO)"/>
+		<meta property="og:url" content="https://www.xxxxx.com/"/>
+		<meta property="og:image" content="./assets/img/img-trendtalk-main-800x400.jpg"/>
+		<meta property="og:site_name" content="TrendTalk (DEMO)"/>
+		<meta property="og:type" content="website"/>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1>TrendTalk (Demo)</h1>
+				<p>국내외 최신 비즈니스 & 마케팅 정보 - <span style="color:#1fcaa7">뉴스레터 구독</span></p>
+			</header>
+
+		<!-- Signup Form -->
+			<form id="signup-form" method="post">
+				<input type="text" name="name" id="name" placeholder="성명" required />
+				<input type="email" name="_replyto" id="email" placeholder="이메일 주소" required />
+				<input type="hidden" name="_subject" value="Email Received From : Website (Demo)" />
+				<input type="hidden" name="_language" value="ko" />
+				<input type="text" name="_gotcha" style="display:none" />
+				<input type="hidden" name="_next" value="https://www.trendtalk.kr/success.html" />
+				<input type="submit" value="확인" />
+			</form>
+			<script>
+    		var contactform =  document.getElementById('signup-form');
+    		contactform.setAttribute('action', 'https://formspree.io/' + 'mutualwide' + '@' + '163' + '.' + 'com');
+			</script>
+
+		<!-- Footer -->
+			<footer id="footer">
+		<!--		<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul> -->
+				<ul class="copyright">
+					<li>&copy; TrendTalk ( <a href="mailto:hello@xxxxx.com">hello@xxxxx.com</a> )</li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
